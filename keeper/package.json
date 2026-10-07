@@ -1,0 +1,24 @@
+{
+  "name": "tenblocks-keeper",
+  "version": "0.1.0",
+  "description": "Automatic keeper for TenBlocks: resolves rounds in order, converts epochs, housekeeping, and the daily HolderPot payments for TEN v1 holders",
+  "type": "module",
+  "license": "MIT",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "start": "tsx src/index.ts",
+    "dry": "DRY_RUN=1 tsx src/index.ts --once",
+    "bootstrap": "tsx src/index.ts --bootstrap",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "ethers": "6.17.0"
+  },
+  "devDependencies": {
+    "@types/node": "20.19.43",
+    "tsx": "4.23.15",
+    "typescript": "5.9.3",
+    "vitest": "2.1.9"
+  }
+}

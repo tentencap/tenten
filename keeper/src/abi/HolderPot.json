@@ -1,0 +1,7 @@
+[
+  "function balance() view returns (uint256)",
+  "function operator() view returns (address)",
+  "function owner() view returns (address)",
+  "function push(address[] to, uint256[] amounts, bytes32 ref)",
+  "event Pushed(bytes32 indexed ref, uint256 recipients, uint256 paid, uint256 skipped)"
+]
